@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Akiva</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <span class="open-slide">
+      <a  onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+    <h1 id="akiva">Akiva Rosenberg</h1>
+    <ul class="navbar-nav">
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a class="btn-close" onclick="closeSlideMenu()">&times;</a>
+     <li><a href="#demo">Demo</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </div>
+
+
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+
+  <div class="pimg1">
+    <div class="ptext1"  >
+      <span class="border">
+        Akiva is a pretty cool dude
+      </span>
+    </div>
+    
+  </div>
+
+  <section id="demo"  class="section section-light">
+    <h2 >Demo</h2>
+    <p>
+      Listen to demos please?
+    </p>
+  <audio controls src="sounds/demo.mp3"></audio>
+
+   
+  </section>
+
+  <div class="pimg2" id="about">
+    <div class="ptext2">
+      <span class="border trans">
+        Lets get personal
+      </span>
+    </div>
+  </div>
+
+  <section  class="section section-dark">
+    <h2>About me</h2>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, laudantium, quibusdam? Nobis, delectus, commodi, fugit amet tempora facere dolores nisi facilis consequatur, odio hic minima nostrum. Perferendis eos earum praesentium, blanditiis sapiente labore aliquam ipsa architecto vitae. Minima soluta temporibus voluptates inventore commodi cumque esse suscipit optio aliquam et, dolorem a cupiditate nihil fuga laboriosam fugiat placeat dignissimos! Unde eveniet placeat quisquam blanditiis voluptatem doloremque fugiat dolor repellendus ratione in.
+    </p>
+  </section>
+
+  <div class="pimg3">
+    <div class="ptext3">
+      <span class="border trans">
+        Lets Talk
+      </span>
+    </div>
+  </div>
+
+  <section id="contact" class="section section-dark">
+    <h2>Contact</h2>
+    
+    <p class="phone">
+        <img class="phone-image" src="images/phone.png"> 555-555-5555
+    </p>
+    <p class="mail">
+        <img class="mail-image" src="images/mail.png"> email@email.com
+    </p>
+  </section>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
